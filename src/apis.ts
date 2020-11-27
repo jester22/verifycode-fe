@@ -1,5 +1,7 @@
+const { REACT_APP_SERVER_API } = process.env;
+
 export const verifyCodeRequest = async (code: string) => {
-  const response = await fetch('/verifycode', {
+  const response = await fetch(`${REACT_APP_SERVER_API}/verifycode`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

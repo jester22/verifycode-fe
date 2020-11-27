@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {"sources": "/", "destination": "/index.html"}
+  ],
+  "unlisted": [
+    "serve.json"
+  ],
+  "redirects": [
+    {"sources": "/serve,json", "destination": "/serve.json", "type": 404}
+  ]
+}
